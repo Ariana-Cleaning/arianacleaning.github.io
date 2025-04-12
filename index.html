@@ -1,143 +1,198 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Ariana Cleaning - Move In & Move Out</title>
-<style>
-body {
-font-family: Arial, sans-serif;
-margin: 0;
-padding: 0;
-background-color: #f4f4f4;
-color: #333;
-}
-header {
-background-color: #00796b;
-color: white;
-padding: 20px;
-text-align: center;
-position: relative;
-}
-header img {
-position: absolute;
-top: 10px;
-left: 20px;
-height: 60px;
-}
-header h1 {
-margin: 0;
-font-size: 2.5em;
-}
-.section {
-padding: 20px;
-max-width: 1000px;
-margin: auto;
-background-color: white;
-margin-bottom: 20px;
-border-radius: 8px;
-box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-.section img {
-width: 100%;
-border-radius: 8px;
-}
-h2 {
-color: #00796b;
-}
-.features, .testimonials {
-display: flex;
-flex-wrap: wrap;
-gap: 20px;
-}
-.feature, .testimonial {
-flex: 1 1 calc(50% - 20px);
-background-color: #e0f2f1;
-padding: 15px;
-border-radius: 8px;
-}
-footer {
-background-color: #004d40;
-color: white;
-text-align: center;
-padding: 15px 10px;
-}
-.contact a {
-color: #00796b;
-font-weight: bold;
-text-decoration: none;
-}
-.whatsapp-button {
-display: inline-block;
-margin-top: 15px;
-padding: 12px 20px;
-background-color: #25d366;
-color: white;
-font-size: 16px;
-font-weight: bold;
-text-decoration: none;
-border-radius: 5px;
-}
-</style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Ariana Cleaning</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #1e90ff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header img.logo {
+            height: 40px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        section {
+            padding: 30px 20px;
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+            color: #1e90ff;
+        }
+
+        .button-whatsapp {
+            background-color: #25D366;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .gallery img {
+            width: 250px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        .reviews {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .review {
+            background: white;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 8px;
+            max-width: 600px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        form button {
+            background-color: #1e90ff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            .gallery img {
+                width: 90%;
+                height: auto;
+            }
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <img src="logo.jpeg" alt="Ariana Cleaning Logo" class="logo" />
+        <h1>Ariana Cleaning</h1>
+        <p>Move In & Move Out Cleaning Services</p>
+        <a class="button-whatsapp" href="https://wa.me/64220812285" target="_blank">Contact us on WhatsApp</a>
+    </header>
 
-<header>
-<img src="CD1E494B-6109-412F-BB88-95DE6C2A5FC6.jpeg" alt="Ariana Cleaning Logo" />
-<h1>Ariana Cleaning</h1>
-<p>Move In & Move Out Cleaning Services</p>
-</header>
+    <section>
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1581578017424-921b91b013b1" alt="Clean Bathroom"/>
+            <img src="https://images.unsplash.com/photo-1590080876630-b5b0b36fdc54" alt="Clean Kitchen"/>
+            <img src="https://images.unsplash.com/photo-1600047501723-3e8b3b6e3d4e" alt="Vacuumed Carpet"/>
+        </div>
+    </section>
 
-<div class="section">
-<h2>Moving in or out?</h2>
-<p>Let Ariana Cleaning take care of everything! We provide professional <strong>move in</strong> and <strong>move out</strong> cleaning services across the region. Fast response, eco-friendly products, and affordable prices.</p>
-</div>
+    <section>
+        <h2>What Our Clients Say</h2>
+        <div class="reviews">
+            <div class="review">
+                <strong>John M.</strong><br/>
+                "Fantastic job! My house was spotless and smelled amazing."
+            </div>
+            <div class="review">
+                <strong>Emily R.</strong><br/>
+                "Highly professional and quick service for our move out. Will hire again!"
+            </div>
+            <div class="review">
+                <strong>Michael S.</strong><br/>
+                "Very thorough and friendly team. 10/10!"
+            </div>
+            <div class="review">
+                <strong>Jessica T.</strong><br/>
+                "Booking was simple and the results were fantastic."
+            </div>
+            <div class="review">
+                <strong>Daniel K.</strong><br/>
+                "Prompt, polite and effective. Great cleaning service!"
+            </div>
+        </div>
+    </section>
 
-<div class="section">
-<h2>Before & After</h2>
-<img src="https://images.unsplash.com/photo-1598300056396-4c7fbbc01684?auto=format&fit=crop&w=1000&q=60" alt="Before and After Cleaning" />
-</div>
+    <section>
+        <h2>Get a Free Quote</h2>
+        <form onsubmit="sendWhatsAppMessage(); return false;">
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input type="text" id="service" placeholder="Type of Service (e.g., Move In)" required />
+            <input type="date" id="date" required />
+            <textarea id="message" placeholder="Additional Details..." rows="4"></textarea>
+            <button type="submit">Send via WhatsApp</button>
+        </form>
+    </section>
 
-<div class="section">
-<h2>Our Services</h2>
-<div class="features">
-<div class="feature"><p>Full cleaning for empty houses and apartments</p></div>
-<div class="feature"><p>Deep cleaning of bathrooms, kitchens, windows, walls, and carpets</p></div>
-<div class="feature"><p>Perfect for tenants, landlords, and property managers</p></div>
-<div class="feature"><p>Flexible scheduling from Monday to Saturday</p></div>
-</div>
-</div>
+    <footer>
+        © 2025 Ariana Cleaning. All rights reserved.
+    </footer>
 
-<div class="section">
-<h2>Why Choose Ariana Cleaning?</h2>
-<ul>
-<li>Eco-friendly products that care for your health and the environment</li>
-<li>Reliable and experienced team</li>
-<li>Transparent pricing and fair quotes</li>
-<li>Fast booking and friendly service via WhatsApp</li>
-</ul>
-</div>
+    <script>
+        function sendWhatsAppMessage() {
+            var name = document.getElementById('name').value;
+            var service = document.getElementById('service').value;
+            var date = document.getElementById('date').value;
+            var message = document.getElementById('message').value;
 
-<div class="section">
-<h2>What Our Clients Say</h2>
-<div class="testimonials">
-<div class="testimonial"><p>“Impeccable service! The house was shining. Highly recommend!”<br><strong>– Camila R.</strong></p></div>
-<div class="testimonial"><p>“Used Ariana Cleaning for a move out and got my full bond back. Great job!”<br><strong>– Lucas D.</strong></p></div>
-<div class="testimonial"><p>“Very professional and friendly team. They arrived on time and left the place spotless!”<br><strong>– Emily T.</strong></p></div>
-<div class="testimonial"><p>“Outstanding job! The cleaning exceeded my expectations. Will definitely book again.”<br><strong>– James W.</strong></p></div>
-</div>
-</div>
-
-<div class="section contact">
-<h2>Contact Us</h2>
-<p><strong>Phone/WhatsApp:</strong> <a href="tel:+64220812285">022 081 2285</a></p>
-<p><strong>Email:</strong> <a href="mailto:arianacleaningservice@gmail.com">arianacleaningservice@gmail.com</a></p>
-<a class="whatsapp-button" href="https://wa.me/64220812285?text=Hi!%20I'm%20interested%20in%20a%20move%20in%20or%20move%20out%20cleaning%20service.">Message Us on WhatsApp</a>
-</div>
-
-<footer>
-<p>Ariana Cleaning &copy; 2025 - All rights reserved</p>
-</footer>
-
+            var text = `Hello, my name is ${name}. I’m interested in ${service} cleaning on ${date}. ${message}`;
+            var url = "https://wa.me/64220812285?text=" + encodeURIComponent(text);
+            window.open(url, '_blank');
+        }
+    </script>
 </body>
 </html>
